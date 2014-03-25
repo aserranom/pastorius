@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./data.js"></script>
+	<script src="./pastorius.js"></script>
+	<script src="./jquery.flexslider-min.js"></script>
+	<script src="./moment.js"></script>
+	<link rel="stylesheet" type="text/css" href="./flexslider.css">
+	<link rel="stylesheet" type="text/css" href="pastorius.css">
+	<script type="text/javascript" charset="utf-8">
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				// animation: "slide",
+				controlNav: false,
+				prevText: "",
+				nextText: "",
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="fb-root"></div>
+    <script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId      : '538583356239450',
+				status     : true,
+				xfbml      : true
+			});
+		};
+
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		$(document).ready(function() {
+	    	$('.share').click(function() {
+	    		$this = $(this)
+	    		FB.ui({
+					method: 'feed',
+					name: $this.data("name"),
+					picture: $this.data("pic"),
+					link: $this.data("url"),
+					caption: $this.data("caption"),
+				}, function(response){});
+	    	});
+
+	    	var now = moment().format("dddd, MMMM D");
+			$('.date').append(now);
+	    });
+    </script>
+    <div class="container flexslider">
+    	<h1>Top <span class="closer">1O</span> Pets</h1>
+    	<h2 class="date"></h2>
+		<ul id="pastorius-container" class="slides">
+		</ul>
+	</div>
+</body>
+</html>

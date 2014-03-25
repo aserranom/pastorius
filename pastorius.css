@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Avant Garde';
+    src: url('./fonts/itcavantgardestd-md.eot');
+    src: url('./fonts/itcavantgardestd-md.eot') format('embedded-opentype'),
+         url('./fonts/itcavantgardestd-md.woff') format('woff'),
+         url('./fonts/itcavantgardestd-md.ttf') format('truetype'),
+         url('./fonts/itcavantgardestd-md.svg#ITCAvantGardeGothicStdMedium') format('svg');
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Avant Garde';
+    src: url('./fonts/itcavantgardestd-bold.eot');
+    src: url('./fonts/itcavantgardestd-bold.eot') format('embedded-opentype'),
+         url('./fonts/itcavantgardestd-bold.woff') format('woff'),
+         url('./fonts/itcavantgardestd-bold.ttf') format('truetype'),
+         url('./fonts/itcavantgardestd-bold.svg#ITCAvantGardeGothicStdBold') format('svg');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'AvenirRoman';
+    src: url('./fonts/avenir-roman.eot');
+    src: url('./fonts/avenir-roman.eot') format('embedded-opentype'),
+         url('./fonts/avenir-roman.woff') format('woff'),
+         url('./fonts/avenir-roman.ttf') format('truetype'),
+         url('./fonts/avenir-roman.svg#AvenirRoman') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirBlack';
+    src: url('./fonts/avenir-black.eot');
+    src: url('./fonts/avenir-black.eot') format('embedded-opentype'),
+         url('./fonts/avenir-black.woff') format('woff'),
+         url('./fonts/avenir-black.ttf') format('truetype'),
+         url('./fonts/avenir-black.svg#AvenirBlack') format('svg');
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: "Avant Garde";
+	width: 442px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding: 32px 31px 26px 31px;
+}
+
+h1, h2 {
+	text-align: center;
+	letter-spacing: -0.05em;
+	margin: 0;
+}
+
+h1 {
+	font-size: 70px;
+	margin-bottom: -8px;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom: 18px;
+}
+
+.closer {
+	letter-spacing: -0.19em;
+}
+
+.pic {
+	position: relative;
+	margin-bottom: 24px;
+}
+
+.rank {
+	height: 42px;
+	width: 62px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #d90016;
+	color: white;
+	padding-top: 20px;
+	font-weight: bold;
+	font-size: 33px;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	letter-spacing: -0.03em;
+	margin: 0;
+}
+
+.pet-name {
+	font-size: 33px;
+	font-weight: bold;
+	margin-bottom: -5px;
+	height: 40px;
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.pet-location {
+	font-size: 16px;
+	height: 20px;
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+.flex-control-nav {
+	bottom: 88px;
+}
+
+.flexslider {
+	margin: 0;
+	border: 1px solid #bbbbbb;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.flexslider .flex-prev {
+	top: 570px;
+	left: 30px;
+	opacity: 0.7;
+	height: 50px;
+	width: 25px;
+	background: url('./arr.png');
+}
+
+.flexslider:hover .flex-prev {
+	left: 30px;
+}
+
+.flex-direction-nav a.flex-prev:before {
+	content: '';
+}
+
+.flexslider .flex-next {
+	top: 570px;
+	right: 30px;
+	opacity: 0.7;
+	height: 50px;
+	width: 25px;
+	background: url('./arr.png') 25px;
+}
+
+.flexslider:hover .flex-next {
+	right: 30px;
+}
+
+.flex-direction-nav a.flex-next:before {
+	content: '';
+}
+
+.share, .nominate {
+	font-family: "AvenirRoman";
+	letter-spacing: -0.03em;
+	font-size: 14px;
+	color: #ffffff;
+	width: 180px;
+	height: 50px;
+}
+
+.nominate {
+	text-align: center;
+	background: #fa6003;
+	display: block;
+	float: left;
+}
+
+.nominate div {
+	margin-top: 9px;
+	vertical-align:middle;
+}
+
+.plus {
+	font-size: 21px;
+	font-family: "AvenirBlack";
+}
+
+.share {
+	float: right;
+	background: url('./fb.png') 15px 14px no-repeat #3b5998;
+}
+
+.share div {
+	border-left: 1px #627aad solid;
+	margin-top: 8px;
+	padding: 8px 0;
+	margin-left: 39px;
+	padding-left: 4px;
+}
+
+.share:hover {
+	cursor: pointer;
+}
